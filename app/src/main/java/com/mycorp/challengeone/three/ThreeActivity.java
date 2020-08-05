@@ -19,24 +19,27 @@ public class ThreeActivity extends AppCompatActivity {
 
     EditText email, pass;
     Button submit;
+    String emails, password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_three);
 
-        email = findViewById(R.id.email);
+        email = findViewById(R.id.emailss);
         pass = findViewById(R.id.password);
         submit = findViewById(R.id.btn_submit);
 
-        final String password = pass.getText().toString();
-        final String emails = email.getText().toString();
+        System.out.println(email.getText().toString());
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println("ok");
-                if (password.equals("")) {
-                    System.out.println("kosong");
+                System.out.println(password);
+                System.out.println("Ini password: "+emails);
+                if (password == null) {
+                    Toast.makeText(getApplicationContext(), "Field tidak boleh kosong!", Toast.LENGTH_LONG).show();
+                }else if (isValidateEmail(emails)) {
+                    System.out.println("ok");
                 }
             }
         });

@@ -42,10 +42,9 @@
                 android:text="Email" />
 
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/emailss"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:ems="10"
                 android:inputType="textEmailAddress" />
 
             <TextView
