@@ -33,6 +33,7 @@ public class FirstActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(getApplicationContext(), DetailActivity.class);
                     intent.putExtra("result", result);
+                    finish();
                     startActivity(intent);
                 }
             }

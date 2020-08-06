@@ -58,6 +58,6 @@ public class ThreeActivity extends AppCompatActivity {
     }
 
     public static boolean isValidatePassword(String pass) {
-        return (pass.matches("^[a-zA-Z0-9]*$"));
+        return (pass.matches("^[a-zA-Z0-9]+$"));
     }
 }

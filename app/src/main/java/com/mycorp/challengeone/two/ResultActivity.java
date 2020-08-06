@@ -35,6 +35,7 @@ public class ResultActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
                     intent.putExtra("result", result);
+                    finish();
                     startActivity(intent);
                 }
             }
